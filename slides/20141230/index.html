@@ -1,44 +1,75 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>PHP-WVL December Event</title>
+        <title>PHP-WVL - 30/12 Meetup</title>
 
-		<meta name="description" content="PHP-WVL December Event">
-		<meta name="author" content="Tom Van Herreweghe">
+        <meta name="description" content="PHP-WVL October Event">
+        <meta name="author" content="Tom Van Herreweghe">
+        <meta name="author" content="Jachim Coudenys">
+        <meta name="meetup" content="http://www.meetup.com/php-wvl/events/225865878/" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/phpwvl.css" id="theme">
-		<link rel="stylesheet" href="css/phpwvl.css">
+        <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/league.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <style>
+            ul li {
+                list-style-type:none;
+            }
 
-	<body>
+            div.reveal section .smaller {
+                line-height:1.2em;
+                color:cyan;
+                font-size:0.85em;
+            }
 
-		<div class="reveal">
+            .emphasize {
+                color:cyan;
+            }
 
-			<!-- Any section element inside of this container is displayed as a slide -->
+            #wifi {
+                text-align:left;
+            }
+
+            .reveal section img {
+                border: 0;
+                background: none;
+                box-shadow: none;
+            }
+
+            .reveal section img.icon {
+                margin: 0;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
 			<div class="slides">
 				<section>
-					<img src="assets/logo_phpwvl.png" width="400" />
+					<img src="../img/logo_phpwvl.png" width="400" />
 					<p style="text-align:left;">
                         Wifi: <span class="emphasize">--</span><br />
                         Pass: <span class="emphasize">--</span>
@@ -60,29 +91,29 @@
 
 				<section>
 					<section>
-						<img src="assets/previously_on_phpwvl.jpg" width="600" />
+						<img src="../img/previously_on_phpwvl.jpg" width="600" />
 					</section>
 					<section>
-						<img src="assets/sfeerbeeld.jpg" height="600" />
+						<img src="../img/20141230/sfeerbeeld.jpg" height="600" />
 					</section>
 					<section>
-						<img src="assets/sfeerbeeld2.jpg" width="600" />
+						<img src="../img/20141230/sfeerbeeld2.jpg" width="600" />
 					</section>
 					<section>
-						<img src="assets/sfeerbeeld3.jpg" width="600" />
+						<img src="../img/20141230/sfeerbeeld3.jpg" width="600" />
 					</section>
 				</section>
 				<section>
 					<h2>Raffle</h2>
 					<p>Na de presentaties rafflen we:</p>
 					<ul>
-						<li class="fragment"><img src="assets/phpstormlogo.gif" style="background-color:white;padding:4px;width:211px;" /></li>
+						<li class="fragment"><img src="../img/20141230/phpstormlogo.gif" style="background-color:white;padding:4px;width:211px;" /></li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>PHPBenelux Conferentie</h2>
-					<img src="assets/phpbnlheader.png" style="background-color:white;padding:4px;width:211px;" />
+					<img src="../img/20141230/phpbnlheader.png" style="background-color:white;padding:4px;width:211px;" />
 					<br />
 					<ul>
 						<li class="fragment emphasize">Vrij 23/01 - Za 24/01</li>
@@ -95,11 +126,11 @@
 					<ul>
 						<li class=""><span class="emphasize"><a href="http://php-wvl.be">http://php-wvl.be</a></span></li>
 						<li class=""><span class="emphasize"><a href="irc://irc.freenode.net/phpwvl">#phpwvl op Freenode</a></span></li>
-						<li class=""><img src="assets/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
-						<li class=""><img src="assets/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
-						<li class=""><img src="assets/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
-						<li class=""><img src="assets/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
-						<li class=""><img src="assets/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
+						<li class=""><img src="../img/icon_twitter.png" />&nbsp;&nbsp;phpwvl</li>
+						<li class=""><img src="../img/icon_facebook.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+						<li class=""><img src="../img/icon_linkedin.png" />&nbsp;&nbsp;PHP-WVL (group)</li>
+						<li class=""><img src="../img/icon_github.png" />&nbsp;&nbsp;PHP-WVL (organization)</li>
+						<li class=""><img src="../img/icon_hashtag.png" />&nbsp;&nbsp;phpwvl</li>
 					</ul>
 				</section>
 
@@ -111,7 +142,7 @@
 				<section>
 					<section>
 						<h2>PHP-WVL zoekt...</h2>
-						<img src="assets/unclesam.jpg" width="400" />
+						<img src="../img/unclesam.jpg" width="400" />
 					</section>
 					<section>
 						<h2>PHP-WVL zoekt...</h2>
@@ -138,41 +169,35 @@
 
 			</div>
 
-		</div>
+        </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+        <script src="../reveal.js/lib/js/head.min.js"></script>
+        <script src="../reveal.js/js/reveal.js"></script>
 
-		<script>
+        <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				margin: 0.01,
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        </script>
 
-		</script>
-
-	</body>
+    </body>
 </html>
